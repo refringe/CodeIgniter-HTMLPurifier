@@ -38,9 +38,9 @@ if (! function_exists('html_purify'))
 					$config->set('Core.Encoding', 'utf-8');
 					$config->set('HTML.Doctype', 'XHTML 1.0 Strict');
 					$config->set('HTML.Allowed', 'p,a[href|title],abbr[title],acronym[title],b,strong,blockquote[cite],code,em,i,strike');
-					$config->set('AutoFormat.AutoParagraph', true);
-					$config->set('AutoFormat.Linkify', true);
-					$config->set('AutoFormat.RemoveEmpty', true);
+					$config->set('AutoFormat.AutoParagraph', TRUE);
+					$config->set('AutoFormat.Linkify', TRUE);
+					$config->set('AutoFormat.RemoveEmpty', TRUE);
 					break;
 
 				case FALSE:
