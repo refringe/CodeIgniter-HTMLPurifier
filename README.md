@@ -5,7 +5,7 @@ Codeigniter HTMLPurifier Helper
 
 Installation
 ------------
- - Save file as:  
+ - Copy HTMLPurifier helper to:  
    `./application/helpers/htmlpurifier_helper.php`
  - Download the HTMLPurifier standalone version and copy to:  
    `./application/third_party/htmlpurifier-4.3.0-standalone/*`
