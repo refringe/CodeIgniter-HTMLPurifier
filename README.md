@@ -15,6 +15,6 @@ Usage
  - Create and customize configurations
  - Use the following code to purify:  
    `$this->load->helper('htmlpurifier');`  
-   `$clean_html = html_purify($dirty_html);`
+   `$clean_html = html_purify($dirty_html);`  
    Or to use a config:  
    `$clean_html = html_purify($dirty_html, 'comment');`
