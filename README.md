@@ -8,7 +8,7 @@ Installation
  - Copy HTMLPurifier helper to:  
    `./application/helpers/htmlpurifier_helper.php`
  - Download the [HTMLPurifier standalone version](http://htmlpurifier.org/download) and copy to:  
-   `./application/third_party/htmlpurifier-4.3.0-standalone/*`
+   `./application/third_party/htmlpurifier-4.4.0-standalone/*`
 
 Usage
 -----
