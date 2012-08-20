@@ -6,9 +6,9 @@
  * Purify input using the HTMLPurifier standalone class.
  * Easily use multiple purifier configurations.
  *
- * @author     Tyler Brownell
- * @copyright  Copyright © 2011 Blue Fox Studio
- * @license    http://bluefoxstudio.ca/license.html
+ * @author     Tyler Brownell <tyler@bluefoxstudio.ca>
+ * @copyright  Public Domain
+ * @license    http://bluefoxstudio.ca/release.html
  *
  * @access  public
  * @param   string or array
