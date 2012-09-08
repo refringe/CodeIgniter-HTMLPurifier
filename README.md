@@ -9,6 +9,8 @@ Installation
    `./application/helpers/htmlpurifier_helper.php`
  - Download the [HTMLPurifier standalone version](http://htmlpurifier.org/download) and copy to:  
    `./application/third_party/htmlpurifier-4.4.0-standalone/*`
+ - Make ./application/third_party/htmlpurifier-4.4.0-standalone/standalone/HTMLPurifier/DefinitionCache/Serializer
+   writable by doing 'chmod 777 Serializer'
 
 Usage
 -----
