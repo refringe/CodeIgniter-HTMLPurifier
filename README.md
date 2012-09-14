@@ -15,9 +15,11 @@ Installation
 
 Usage
 -----
- - Create and customize configurations
- - Use the following code to purify:  
+ - Create and customize HTMLPurifier configurations by opening the helper (`htmlpurifier_helper.php`) and editing/adding case statements. There's a default configuration named "comment" that should be sufficient for basic web comments with HTML allowed, but be sure to check it and make sure it meets your standards.  
+   View the [HTMLPurifier Configuration Documentation](http://htmlpurifier.org/live/configdoc/plain.html) for more information.
+ - Use the following code to purify using the default configuration:  
    `$this->load->helper('htmlpurifier');`  
    `$clean_html = html_purify($dirty_html);`  
-   Or to use a config:  
+   Where `$dirty_html` is a string, or an array of strings.
+ - To use a specific configuration pass the name of the configuration as the second parameter:  
    `$clean_html = html_purify($dirty_html, 'comment');`
