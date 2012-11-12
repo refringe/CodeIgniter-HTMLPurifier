@@ -25,7 +25,7 @@ if (! function_exists('html_purify'))
 		{
 			foreach ($dirty_html as $key => $val)
 			{
-				$clean_html[$key] = html_purify($val);
+				$clean_html[$key] = html_purify($val, $config);
 			}
 		}
 
