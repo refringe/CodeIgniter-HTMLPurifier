@@ -19,7 +19,7 @@ if (! function_exists('html_purify'))
 {
 	function html_purify($dirty_html, $config = FALSE)
 	{
-		require_once APPPATH . 'third_party/htmlpurifier-4.4.0-standalone/HTMLPurifier.standalone.php';
+		require_once APPPATH . 'third_party/htmlpurifier-4.5.0-standalone/HTMLPurifier.standalone.php';
 
 		if (is_array($dirty_html))
 		{
