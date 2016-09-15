@@ -52,7 +52,7 @@ if (! function_exists('html_purify'))
                     break;
 
                 default:
-                    show_error('The HTMLPurifier configuration labeled "' . htmlentities($config, ENT_QUOTES, 'UTF-8') . '" could not be found.');
+                    show_error('The HTMLPurifier configuration labeled "' . htmlspecialchars($config, ENT_QUOTES, $ci->config->item('charset')) . '" could not be found.');
             }
 
             $purifier = new HTMLPurifier($config);
