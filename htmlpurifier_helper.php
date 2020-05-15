@@ -1,8 +1,6 @@
 <?php
 
-if (!defined('BASEPATH')) {
-    exit('No direct script access allowed');
-}
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
  * Codeigniter HTMLPurifier Helper
@@ -10,9 +8,8 @@ if (!defined('BASEPATH')) {
  * Purify input using the HTMLPurifier standalone class.
  * Easily use multiple purifier configurations.
  *
- * @author     Tyler Brownell <tyler@bluefoxstudio.ca>
+ * @author     Tyler Brownell <tyler.brownell@mssociety.ca>
  * @copyright  Public Domain
- * @license    http://bluefoxstudio.ca/release.html
  *
  * @access  public
  * @param   string or array  $dirty_html  A string (or array of strings) to be cleaned.
@@ -22,7 +19,7 @@ if (!defined('BASEPATH')) {
 if (!function_exists('html_purify')) {
     function html_purify($dirty_html, $config = false)
     {
-        require_once APPPATH.'third_party/htmlpurifier-4.8.0-standalone/HTMLPurifier.standalone.php';
+        require_once APPPATH.'third_party/htmlpurifier-4.12.0-standalone/HTMLPurifier.standalone.php';
 
         if (is_array($dirty_html)) {
             foreach ($dirty_html as $key => $val) {
